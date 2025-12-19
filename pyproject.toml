@@ -18,17 +18,16 @@ streamlit = "^1.32.0"
 numpy = "^1.26.0"
 pandas = "^2.1.0"
 scikit-learn = "^1.3.0"
+joblib = "*"
+
+# Visualisasi
+plotly = "^5.18.0"
+matplotlib = "*"
+seaborn = "*"
 
 # Deep Learning / ML
 torch = "*"
 tensorflow = "*"
-
-# Visualisasi (jika dipakai di app)
-matplotlib = "*"
-seaborn = "*"
-
-# Optional (aman ditambahkan)
-joblib = "*"
 
 
 [build-system]
