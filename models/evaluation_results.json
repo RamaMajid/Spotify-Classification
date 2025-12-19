@@ -1,0 +1,218 @@
+{
+  "comparison_table": [
+    {
+      "Model": "MLP (Baseline)",
+      "Accuracy": 0.9976708074534162,
+      "Precision (Macro)": 0.9968539071248982,
+      "Recall (Macro)": 0.997580648683113,
+      "F1-Score (Macro)": 0.9972157924440337
+    },
+    {
+      "Model": "TabNet",
+      "Accuracy": 0.9976708074534162,
+      "Precision (Macro)": 0.9966649624183871,
+      "Recall (Macro)": 0.9983164983164983,
+      "F1-Score (Macro)": 0.997483176098425
+    },
+    {
+      "Model": "Transformer",
+      "Accuracy": 0.9992236024844721,
+      "Precision (Macro)": 0.9987080103359173,
+      "Recall (Macro)": 0.999438832772166,
+      "F1-Score (Macro)": 0.9990719308146779
+    }
+  ],
+  "mlp": {
+    "accuracy": 0.9976708074534162,
+    "confusion_matrix": [
+      [
+        592,
+        0,
+        2
+      ],
+      [
+        0,
+        437,
+        0
+      ],
+      [
+        1,
+        0,
+        256
+      ]
+    ],
+    "classification_report": {
+      "Populer": {
+        "precision": 0.9983136593591906,
+        "recall": 0.9966329966329966,
+        "f1-score": 0.9974726200505476,
+        "support": 594.0
+      },
+      "Sangat Populer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 437.0
+      },
+      "Tidak Populer": {
+        "precision": 0.9922480620155039,
+        "recall": 0.9961089494163424,
+        "f1-score": 0.9941747572815534,
+        "support": 257.0
+      },
+      "accuracy": 0.9976708074534162,
+      "macro avg": {
+        "precision": 0.9968539071248982,
+        "recall": 0.997580648683113,
+        "f1-score": 0.9972157924440337,
+        "support": 1288.0
+      },
+      "weighted avg": {
+        "precision": 0.9976755167681239,
+        "recall": 0.9976708074534162,
+        "f1-score": 0.9976720876796464,
+        "support": 1288.0
+      }
+    }
+  },
+  "tabnet": {
+    "accuracy": 0.9976708074534162,
+    "confusion_matrix": [
+      [
+        591,
+        1,
+        2
+      ],
+      [
+        0,
+        437,
+        0
+      ],
+      [
+        0,
+        0,
+        257
+      ]
+    ],
+    "classification_report": {
+      "Populer": {
+        "precision": 1.0,
+        "recall": 0.9949494949494949,
+        "f1-score": 0.9974683544303797,
+        "support": 594.0
+      },
+      "Sangat Populer": {
+        "precision": 0.997716894977169,
+        "recall": 1.0,
+        "f1-score": 0.9988571428571429,
+        "support": 437.0
+      },
+      "Tidak Populer": {
+        "precision": 0.9922779922779923,
+        "recall": 1.0,
+        "f1-score": 0.9961240310077519,
+        "support": 257.0
+      },
+      "accuracy": 0.9976708074534162,
+      "macro avg": {
+        "precision": 0.9966649624183871,
+        "recall": 0.9983164983164983,
+        "f1-score": 0.997483176098425,
+        "support": 1288.0
+      },
+      "weighted avg": {
+        "precision": 0.997684570745704,
+        "recall": 0.9976708074534162,
+        "f1-score": 0.9976713120568396,
+        "support": 1288.0
+      }
+    },
+    "feature_importance": [
+      {
+        "feature": "track_popularity",
+        "importance": 0.8088251915101607
+      },
+      {
+        "feature": "album_type_encoded",
+        "importance": 0.07432861251006527
+      },
+      {
+        "feature": "album_total_tracks",
+        "importance": 0.059385270863586456
+      },
+      {
+        "feature": "track_duration_min",
+        "importance": 0.043744931343804076
+      },
+      {
+        "feature": "artist_followers",
+        "importance": 0.009098828372343847
+      },
+      {
+        "feature": "track_number",
+        "importance": 0.0032767297835513336
+      },
+      {
+        "feature": "explicit",
+        "importance": 0.0012537092613839618
+      },
+      {
+        "feature": "artist_popularity",
+        "importance": 8.672635510431372e-05
+      }
+    ]
+  },
+  "transformer": {
+    "accuracy": 0.9992236024844721,
+    "confusion_matrix": [
+      [
+        593,
+        0,
+        1
+      ],
+      [
+        0,
+        437,
+        0
+      ],
+      [
+        0,
+        0,
+        257
+      ]
+    ],
+    "classification_report": {
+      "Populer": {
+        "precision": 1.0,
+        "recall": 0.9983164983164983,
+        "f1-score": 0.9991575400168492,
+        "support": 594.0
+      },
+      "Sangat Populer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 437.0
+      },
+      "Tidak Populer": {
+        "precision": 0.9961240310077519,
+        "recall": 1.0,
+        "f1-score": 0.9980582524271845,
+        "support": 257.0
+      },
+      "accuracy": 0.9992236024844721,
+      "macro avg": {
+        "precision": 0.9987080103359173,
+        "recall": 0.999438832772166,
+        "f1-score": 0.9990719308146779,
+        "support": 1288.0
+      },
+      "weighted avg": {
+        "precision": 0.999226611777168,
+        "recall": 0.9992236024844721,
+        "f1-score": 0.9992240292265487,
+        "support": 1288.0
+      }
+    }
+  }
+}
