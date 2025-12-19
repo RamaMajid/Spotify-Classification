@@ -1,30 +1,36 @@
-[project]
-name = "UAP"
+[tool.poetry]
+name = "spotify-classification"
 version = "0.1.0"
-description = "Default template for PDM package"
-authors = [
-    {name = "RamaMajid", email = "rifkirama34@gmail.com"},
-]
-dependencies = [
-    "streamlit==1.37.0",
-    "tensorflow>=2.20.0",
-    "scikit-learn>=1.7.2",
-    "joblib>=1.5.3",
-    "pandas>=2.0.0",
-    "numpy>=1.24.0",
-    "matplotlib>=3.7.0",
-    "seaborn>=0.12.0",
-    "plotly>=5.18.0",
-    "torch>=2.0.0",
-    "pytorch-tabnet>=4.1.0",
-    "jupyter>=1.0.0",
-    "ipykernel>=6.25.0",
-    "openpyxl>=3.1.0",
-]
-requires-python = "==3.11.*"
+description = "Aplikasi Streamlit untuk klasifikasi popularitas lagu Spotify"
+authors = ["Rama Majid"]
 readme = "README.md"
-license = {text = "MIT"}
+
+# 🔴 PENTING: Nonaktifkan packaging mode
+# Karena ini aplikasi Streamlit, bukan Python library
+package-mode = false
 
 
-[tool.pdm]
-distribution = false
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Core
+streamlit = "^1.32.0"
+numpy = "^1.26.0"
+pandas = "^2.1.0"
+scikit-learn = "^1.3.0"
+
+# Deep Learning / ML
+torch = "*"
+tensorflow = "*"
+
+# Visualisasi (jika dipakai di app)
+matplotlib = "*"
+seaborn = "*"
+
+# Optional (aman ditambahkan)
+joblib = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
