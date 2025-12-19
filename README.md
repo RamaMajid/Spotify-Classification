@@ -652,5 +652,3 @@ rm -rf .streamlit/cache
 MIT License - Free to use for educational purposes
 
 ---
-
-**Dibuat dengan ❤️ menggunakan Streamlit, TensorFlow, dan PyTorch**
