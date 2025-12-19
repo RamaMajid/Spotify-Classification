@@ -352,8 +352,8 @@ Grafik perbandingan menunjukkan:
 
 | Kriteria | Rank 1 | Rank 2 | Rank 3 |
 |----------|--------|--------|--------|
-| **Akurasi Tertinggi** | TabNet (78-83%) | Transformer (76-81%) | MLP (75-80%) |
-| **Training Speed** | MLP (2-3 min) | TabNet (5-8 min) | Transformer (8-12 min) |
+| **Akurasi Tertinggi** | Transformer (0.9992) | TabNet (0.9977) | MLP (Baseline) (0.9977) |
+| **Training Speed** | MLP (2–3 min) | TabNet (5–8 min) | Transformer (8–12 min) |
 | **Interpretability** | TabNet (⭐⭐⭐⭐⭐) | MLP (⭐) | Transformer (⭐⭐) |
 | **Resource Efficiency** | MLP (⭐⭐⭐⭐⭐) | TabNet (⭐⭐⭐) | Transformer (⭐⭐) |
 | **Scalability** | TabNet (⭐⭐⭐⭐) | Transformer (⭐⭐⭐) | MLP (⭐⭐⭐) |
@@ -652,5 +652,3 @@ rm -rf .streamlit/cache
 MIT License - Free to use for educational purposes
 
 ---
-
-**Dibuat dengan ❤️ menggunakan Streamlit, TensorFlow, dan PyTorch**
