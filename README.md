@@ -3,6 +3,9 @@
 **UAP Pembelajaran Mesin**  
 **Prediksi Popularitas Lagu menggunakan Deep Learning dan Transfer Learning**
 
+**Try it for yourself: 
+https://spotify-classification-azlcrr5dok4w7p7pjpwffx.streamlit.app/**
+
 ---
 
 ## 📋 Deskripsi Proyek
